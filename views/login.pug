@@ -2,14 +2,17 @@ extends index.pug
 
 block content
   div(class="container w-40")
-    div(class="w-10")
-      h1(class="text-3xl font-semibold text-center mb-4") Login
-      form(action="/login", method="post")
-        div(class="mb-4")
-          label(for="username" class="label") Username:
-          input(type="text", name="username", id="username", class="form-control")
-        div(class="mb-4")
-          label(for="password" class="label") Password:
-          input(type="password", name="password", id="password", class="form-control")
-        div(class="mt-6")
-          input(type="submit", value="Login", class="btn btn-primary w-100")
+    div(class="row")
+      div(class="col-md-4")
+      div(class="col-md-4")
+        h1(class="text-3xl font-semibold text-center mb-4") Login
+        form(action="/login", method="post")
+          div(class="mb-4")
+            label(for="username" class="label") Username:
+            input(type="text", name="username", id="username", class="form-control")
+          div(class="mb-4")
+            label(for="password" class="label") Password:
+            input(type="password", name="password", id="password", class="form-control")
+          div(class="mt-6")
+            input(type="submit", value="Login", class="btn btn-primary w-100")
+        div(class="col-md-4")

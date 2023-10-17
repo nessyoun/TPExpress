@@ -108,8 +108,14 @@ app.post('/login',
 app.get('/books', (req, res) => {
     if (req.isAuthenticated()) {
         // Display a success flash message
-        req.flash('success', 'You are logged in!');
-        res.render('books');
+        const books = [
+          { title: 'Book 1', author: 'Author 1', ISBN: '1' },
+          { title: 'Book 2', author: 'Author 2', ISBN: '2' },
+          { title: 'Book 3', author: 'Author 3', ISBN: '3' },
+          { title: 'Book 4', author: 'Author 4', ISBN: '4' },
+          { title: 'Book 5', author: 'Author 5', ISBN: '5' },
+        ];
+        res.render('books', { books });
       } else {
         // Display an error flash message
         req.flash('error', 'Please log in first.');

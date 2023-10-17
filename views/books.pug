@@ -1,6 +1,19 @@
 extends index.pug
 
 block content
-  h1 Books 
-  p welcome back hahahaah
-  
+  div(class="container")
+    h1(class="text-center") Books
+    div(class="container")
+      div(class="row bg-primary text-white py-2")
+        div(class="col-md-4") Titre
+        div(class="col-md-4") Auteur
+        div(class="col-md-4") ISBN
+      - if (books && books.length)
+        each book in books
+          div(class="row text-left mx-3 my-3")
+            div(class="col-md-4") 
+              p= book.title
+            div(class="col-md-4") 
+              p= book.author
+            div(class="col-md-4") 
+              p= book.ISBN
