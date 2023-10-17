@@ -1,0 +1,30 @@
+{
+  "name": "nodetp",
+  "version": "1.0.0",
+  "description": "nothing is good for This JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "postcss src/styles.css -o public/styles.css --use tailwindcss"
+
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "bcrypt": "^5.1.1",
+    "connect-flash": "^0.1.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^7.6.3",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "pug": "^3.0.2",
+    "tailwindcss": "^3.3.3"
+  }
+
+  
+}

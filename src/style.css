@@ -1,0 +1,16 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* Custom styles for elements with a class of "custom-class" */
+.custom-class {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  /* Custom styles for specific elements with IDs */
+  #custom-element {
+    color: #FF5733;
+    font-size: 20px;
+  }
+  
